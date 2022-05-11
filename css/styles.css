@@ -226,6 +226,10 @@ button:focus,
     border: 2px solid var(--font-color);
 }
 
+.project-link {
+    color: var(--project-link-color)
+}
+
 @supports (display: grid) {
     .project-list {
         display: grid;

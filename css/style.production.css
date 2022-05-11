@@ -321,6 +321,10 @@ button:focus {
     border: 2px solid #E6E2DD;
 }
 
+.project-link {
+    color: #4200bc
+}
+
 @supports (display: grid) {
     .project-list {
         display: -ms-grid;
