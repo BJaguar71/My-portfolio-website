@@ -36,6 +36,10 @@ project-link color: #4200bc;
     width:100%;
 }
 
+.logo {
+    width: 200px;
+}
+
 .page-header__item {
     flex-grow: 1;
     font-size: 15px;

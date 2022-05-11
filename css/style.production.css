@@ -46,6 +46,11 @@ project-link color: #4200bc;
     text-align: right;
 }
 
+.logo {
+    width: 200px;
+}
+
+
 body {
     background-color: #34495e;
     font-family: 'Lato', sans-serif;
