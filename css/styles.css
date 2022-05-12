@@ -135,12 +135,14 @@ button:focus,
 
 .navigation-list__item:before {
     content: '<';
+    color: var(--secondary-color);
     left: 0px;
     transform: translateX(10px);
 }
 
 .navigation-list__item:after {
     content: '>';
+    color: var(--secondary-color);
     right: 0px;
     transform: translateX(-10px);
 }
@@ -152,12 +154,12 @@ button:focus,
 }
 
 .navigation-list__item--active {
-    color: var(--hover);
+    color: var(--navigation-item-active);
     text-decoration: none;
 }
 
 .navigation-list__item--active:visited {
-    color: var(--hover);
+    color: var(--navigation-item-active);
 }
 
 .profile {
