@@ -70,6 +70,8 @@ a:hover,
 a:focus {
     text-decoration: none;
 }
+
+.profile-link:hover, .profile-link:focus {
     color: var(--hover);
     text-decoration: none;
     transition: 0.2s;

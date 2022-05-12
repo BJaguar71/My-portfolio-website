@@ -84,6 +84,7 @@ a:focus {
 }
 
 
+.profile-link:hover {
     color: #979797;
     text-decoration: none;
     -webkit-transition: 0.2s;
@@ -92,6 +93,7 @@ a:focus {
 }
 
 a:focus {
+.profile-link:focus {
     color: #979797;
     text-decoration: none;
     -webkit-transition: 0.2s;
