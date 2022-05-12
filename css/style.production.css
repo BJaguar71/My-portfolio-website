@@ -38,6 +38,10 @@ project-link color: #4200bc;
     width:100%;
 }
 
+.logo {
+    width: 200px;
+}
+
 .page-header__item {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -45,11 +49,6 @@ project-link color: #4200bc;
     font-size: 15px;
     text-align: right;
 }
-
-.logo {
-    width: 200px;
-}
-
 
 body {
     background-color: #34495e;
