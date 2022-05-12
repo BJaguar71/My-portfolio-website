@@ -91,7 +91,6 @@ a:focus {
     transition: 0.2s;
 }
 
-a:focus {
 .profile-link:focus {
     color: #979797;
     text-decoration: none;
