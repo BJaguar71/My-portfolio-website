@@ -215,7 +215,6 @@ button:focus,
 .icon:hover,
 .icon:focus {
     transform: scale(1.5);
-    fill:#fcffad;
 }
 
 .address {
