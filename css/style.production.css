@@ -182,6 +182,7 @@ button:focus {
     display: flex;
     width: auto;
     color: #E6E2DD;
+    text-decoration: none;
 }
 
 .navigation-list__item:before,

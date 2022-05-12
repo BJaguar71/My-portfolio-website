@@ -122,6 +122,7 @@ button:focus,
     display: flex;
     width: auto;
     color: var(--font-color);
+    text-decoration: none;
 }
 
 .navigation-list__item:before,
