@@ -118,8 +118,29 @@ button:focus,
     width: auto;
     color: var(--font-color);
 }
-.navigation-list__item:hover {
-    color: var(--hover);
+
+.navigation-list__item:before,
+.navigation-list__item:after {
+    opacity: 0;
+    transition: all 0,3s;
+}
+
+.navigation-list__item:before {
+    content: '<';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.navigation-list__item:after {
+    content: '>';
+    right: 0px;
+    transform: translateX(-10px);
+}
+.navigation-list__item:hover:before,
+.navigation-list__item:hover:after {
+    opacity: 1;
+    transform: translateX(0px);
+    text-decoration: none;
 }
 
 .navigation-list__item--active {

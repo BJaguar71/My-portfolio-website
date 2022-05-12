@@ -178,8 +178,36 @@ button:focus {
     width: auto;
     color: #E6E2DD;
 }
-.navigation-list__item:hover {
-    color: #979797;
+
+.navigation-list__item:before,
+.navigation-list__item:after {
+    opacity: 0;
+    -webkit-transition: all 0,3s;
+    -o-transition: all 0,3s;
+    transition: all 0,3s;
+}
+
+.navigation-list__item:before {
+    content: '<';
+    left: 0px;
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+}
+
+.navigation-list__item:after {
+    content: '>';
+    right: 0px;
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+}
+.navigation-list__item:hover:before,
+.navigation-list__item:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
 }
 
 .navigation-list__item--active {
