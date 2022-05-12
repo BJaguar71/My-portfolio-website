@@ -209,6 +209,15 @@ button:focus,
     width:100%;
 }
 
+.grow{
+    transition: all .2s ease-in-out;
+}
+.icon:hover,
+.icon:focus {
+    transform: scale(1.5);
+    fill:#fcffad;
+}
+
 .address {
     margin: auto 20px;
     max-width: 700px;
