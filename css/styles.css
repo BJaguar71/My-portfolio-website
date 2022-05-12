@@ -149,12 +149,12 @@ button:focus,
 }
 
 .navigation-list__item--active {
-    color: var(--secondary-color);
+    color: var(--hover);
     text-decoration: none;
 }
 
 .navigation-list__item--active:visited {
-    color: var(--secondary-color);
+    color: var(--hover);
 }
 
 .profile {

@@ -216,12 +216,12 @@ button:focus {
 }
 
 .navigation-list__item--active {
-    color: #ffe900;
+    color: #979797;
     text-decoration: none;
 }
 
 .navigation-list__item--active:visited {
-    color: #ffe900;
+    color: #979797;
 }
 
 .profile {
