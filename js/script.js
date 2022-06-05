@@ -43,4 +43,23 @@
         showErrorMessage(input, null);
         return true;
     }
+
+    // validate telephon number
+    function validateTelephone (){
+        let value = telInput.value;
+        return value.lenght === 12;
+
+        if (!value) {
+            showErrorMessage(input, 'telephone is a required field.')
+            return false;
+        }
+
+        if (value.lenght !== 12) {
+            showErrorMessage(input, 'telephone number is invalid');
+            return false;
+        }
+    }
+    showErrorMessage(input, null) {
+        return true;
+    }
 })
