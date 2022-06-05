@@ -69,4 +69,7 @@
         let isValidTel = validateTelephone();
         return isValidEmail && isValidTel;
     } 
+
+    //add event listener to form
+    form.addEventListener('submit', e)
 })
