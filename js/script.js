@@ -13,4 +13,10 @@
             container.removeChild(error);
         }
 
+        // add error if the message is not empty
+        let message = document.createElement('div');
+        error.classList.add('error-message');
+        error.innerText = message;
+        container.appendChild(error); 
+    }
 })
