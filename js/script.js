@@ -19,4 +19,28 @@
         error.innerText = message;
         container.appendChild(error); 
     }
+
+    // validating email input
+    function validateEmail () {
+        let value = emailInput.value;
+        let hasAtSign = value.indexOf('@');
+        let hasDot = value.indexOf('.');
+
+        if (!value) {
+            showErrorMessage(input, 'Email is a required field.');
+        }
+
+        if (value.indexOf('@') === -1) {
+            showErrorMessage(input, '"@" is missing');
+            return false;
+        }
+
+        if (value.indexOf('.') === -1) {
+            showErrorMessage(input, '"." is missing');
+            return false;
+        }
+
+        showErrorMessage(input, null);
+        return true;
+    }
 })
