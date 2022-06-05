@@ -62,4 +62,11 @@
     showErrorMessage(input, null) {
         return true;
     }
+
+    //validate form
+    function validateForm() {
+        let isValidEmail = validateEmail();
+        let isValidTel = validateTelephone();
+        return isValidEmail && isValidTel;
+    } 
 })
