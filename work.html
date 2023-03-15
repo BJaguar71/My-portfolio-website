@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Work</title>
-        <link rel="shortcut icon" href="img/favicon-32x32.png">
-         <!--normalize Css added (always on top of css/styles.css)-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <!--font-->
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        <!-- script tags here -->
-        <script src="js/script.js" async></script>
-        <script src="js/tota11y.min.js" async></script>
-    </head>
-    <body>
-        <header class="page-header">
-            <img src="img/1cat.svg" alt="logo is an illustrated black cat" class="logo">
-            <nav class="page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Works</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="project-list">
-                <!-- Add your project here -->
-                <div class="project-list__item">
-                    <h1>Project 1</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quia eum dignissimos sint, quam pariatur accusantium repellat quo, quis amet error sunt delectus praesentium debitis cumque rerum! Tempora, tempore facilis.</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
-                <div class="project-list__item">
-                    <h1>Project 2</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dignissimos quis animi consequuntur sunt adipisci aspernatur unde. Fuga asperiores optio soluta ratione atque quos, doloremque dolore vitae. Repudiandae, vero ipsam.</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
-                <div class="project-list__item">
-                    <h1>Project 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero vel doloribus provident magni ullam culpa voluptas quod? Inventore modi suscipit repudiandae cumque aliquam! Est sequi itaque illum tempore odio.</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
-                <div class="project-list__item">
-                    <h1>Project 4</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error incidunt rerum sunt tenetur, fuga, a magni ab natus, aut eos praesentium! Impedit laborum veniam, perspiciatis ea at culpa molestias!</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
-                <div class="project-list__item">
-                    <h1>Project 5</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta itaque libero, at quasi veritatis quia ipsam officiis. Autem consequuntur quasi ipsum doloribus perferendis labore facere quos, quae qui atque quisquam.</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
-                <div class="project-list__item">
-                    <h1>Project 6</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit quisquam accusantium debitis quas ipsum adipisci natus repellendus rerum ut a autem, veritatis alias. Fugiat libero natus ducimus repellat tempora.</p>
-                    <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Work</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--normalize Css added (always on top of css/styles.css)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- script tags here -->
+    <script src="js/script.js" async></script>
+    <script src="js/tota11y.min.js" async></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="navbar navbar-expand navbar-light">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="project-list">
+            <!-- Add your project here -->
+            <div class="project-list__item">
+                <h1>Project 1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quia eum dignissimos sint, quam
+                    pariatur accusantium repellat quo, quis amet error sunt delectus praesentium debitis cumque rerum!
+                    Tempora, tempore facilis.</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
             </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div>
-                <a href="https://github.com/BJaguar71" target="_blank" rel="noopener">
-                    <img src="img/github.svg" alt="Github logo" class="icon grow">
-                </a>
-                <a href="https://www.linkedin.com/in/maryam-hanifi/" target="_blank" rel="noopener">
-                    <img src="img/linkdin.svg" alt="Linkdin logo" class="icon grow">
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener">
-                    <img src="img/twitter.svg" alt="Twitter logo" class="icon grow">
-                </a>
+            <div class="project-list__item">
+                <h1>Project 2</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dignissimos quis animi
+                    consequuntur sunt adipisci aspernatur unde. Fuga asperiores optio soluta ratione atque quos,
+                    doloremque dolore vitae. Repudiandae, vero ipsam.</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
             </div>
-        </footer>
-    </body>
+            <div class="project-list__item">
+                <h1>Project 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vero vel doloribus provident
+                    magni ullam culpa voluptas quod? Inventore modi suscipit repudiandae cumque aliquam! Est sequi
+                    itaque illum tempore odio.</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
+            </div>
+            <div class="project-list__item">
+                <h1>Project 4</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere error incidunt rerum sunt tenetur,
+                    fuga, a magni ab natus, aut eos praesentium! Impedit laborum veniam, perspiciatis ea at culpa
+                    molestias!</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
+            </div>
+            <div class="project-list__item">
+                <h1>Project 5</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta itaque libero, at quasi veritatis
+                    quia ipsam officiis. Autem consequuntur quasi ipsum doloribus perferendis labore facere quos, quae
+                    qui atque quisquam.</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
+            </div>
+            <div class="project-list__item">
+                <h1>Project 6</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugit quisquam accusantium debitis
+                    quas ipsum adipisci natus repellendus rerum ut a autem, veritatis alias. Fugiat libero natus ducimus
+                    repellat tempora.</p>
+                <a href="#" class="project-link" target="_blank" rel="noopener">See project here</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div>
+            <a href="https://github.com/BJaguar71" target="_blank" rel="noopener">
+                <img src="img/github.svg" alt="Github logo" class="icon grow">
+            </a>
+            <a href="https://www.linkedin.com/in/maryam-hanifi/" target="_blank" rel="noopener">
+                <img src="img/linkdin.svg" alt="Linkdin logo" class="icon grow">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">
+                <img src="img/twitter.svg" alt="Twitter logo" class="icon grow">
+            </a>
+        </div>
+    </footer>
+</body>
+<!-- Bootstrap's script tags -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
