@@ -135,28 +135,17 @@ button {
     transition: opacity 0.5s; 
 }
 
-button:hover {
-    color: #34495ecf;
-    cursor:pointer;
-    opacity: 0.8;  
-}
-
-button:focus {
-    color: #233a51cf;
-    cursor:pointer;
-    opacity: 0.8;  
-}
-
-.button:hover {
-    color: #34495ecf;
-    cursor:pointer;
-    opacity: 0.8;  
-}
-
+button:hover,
+button:focus,
+.button:hover,
 .button:focus {
-    color: #34495ecf;
-    cursor:pointer;
-    opacity: 0.8;  
+  color: var(--button-hover-focus);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--font-color);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--font-color);
+  -webkit-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .navigation-list {

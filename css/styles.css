@@ -103,7 +103,8 @@ button:focus,
 .button:focus {
     color: var(--button-hover-focus);
     cursor:pointer;
-    opacity: 0.8;  
+    box-shadow: 0 0.5em 0.5em -0.4em var(--font-color);
+    transform: translateY(-0.25em);  
 }
 
 .navigation-list {
