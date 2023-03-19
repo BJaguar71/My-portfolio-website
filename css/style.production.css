@@ -16,7 +16,6 @@ box-shadow: 5px 10px 10px #1d2834;
 button-text-color: #34495e;
 project-link color: #34495e;
 navigation-item-active: #979797;
-project-link-hover-focus: #000000;
 button-hover-focus: #233a51cf;
 */
 
@@ -365,15 +364,22 @@ a.navigation-list__item:hover:after {
 }
 
 .project-link:hover {
-    color: 	#000000;
+    color: 	#979797;
     text-decoration: underline;
     font-weight: bold;
 }
 
 .project-link:focus {
-    color: 	#000000;
+    color: 	#979797;
     text-decoration:underline;
     font-weight: bold;
+}
+
+.project-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @supports (display: grid) {

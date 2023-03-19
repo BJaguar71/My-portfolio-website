@@ -23,7 +23,6 @@ button-hover-focus: #233a51cf;
     --box-shadow: 5px 10px 10px #1d2834;
     --project-link-color: #34495e;
     --navigation-item-active: #979797;
-    --project-link-hover-focus: 	#000000;
     --button-hover-focus: #233a51cf;
 }
 
@@ -276,13 +275,13 @@ a.navigation-list__item:hover:after {
 }
 
 .project-link:hover {
-    color: var(--project-link-hover-focus);
+    color: var(--hover);
     text-decoration: underline;
     font-weight: bold;
 }
 
 .project-link:focus {
-    color: 	var(--project-link-hover-focus);
+    color: 	var(--hover);
     text-decoration:underline;
     font-weight: bold;
 }
@@ -305,6 +304,15 @@ a.navigation-list__item:hover:after {
         grid-row: auto / auto;
     }
 }
+
+/* .project-pic {
+  width: 50%;
+} */
+/* .summary {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+} */
 
 /* smaller screen layout */
 
