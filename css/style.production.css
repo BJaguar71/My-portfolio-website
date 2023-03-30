@@ -74,7 +74,7 @@ body {
 }
 
 a {
-  color: #b4ae41;
+  color: #cccaa9;
   -webkit-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -109,7 +109,7 @@ a:active {
 
 button {
   background-color: #251f20;
-  color: #b4ae41;
+  color: #cccaa9;
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -160,7 +160,7 @@ button {
 .cv-button:before,
 .profile-link:before {
   content: '<';
-  color: #b4ae41;
+  color: #cccaa9;
   left: 0px;
   -webkit-transform: translateX(10px);
   -ms-transform: translateX(10px);
@@ -170,7 +170,7 @@ button {
 .cv-button:after,
 .profile-link:after {
   content: '>';
-  color: #b4ae41;
+  color: #cccaa9;
   right: 0px;
   -webkit-transform: translateX(-10px);
   -ms-transform: translateX(-10px);
@@ -206,7 +206,7 @@ button:focus,
 
 .button:before {
   content: '<';
-  color: #b4ae41;
+  color: #cccaa9;
   left: 0px;
   -webkit-transform: translateX(10px);
   -ms-transform: translateX(10px);
@@ -215,7 +215,7 @@ button:focus,
 
 .button:after {
   content: '>';
-  color: #b4ae41;
+  color: #cccaa9;
   right: 0px;
   -webkit-transform: translateX(-10px);
   -ms-transform: translateX(-10px);
