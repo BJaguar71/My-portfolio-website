@@ -48,6 +48,11 @@ button-hover-focus: #233a51cf;
   text-align: right;
 }
 
+h1 {
+  color: #cccaa9;
+  text-align: center;
+}
+
 body {
   background-color: #251f20;
   font-family: 'Lato', sans-serif;
@@ -120,6 +125,9 @@ button {
   color: #979797;
 }
 
+.cv-button {
+  padding-right: 20px;
+}
 /*
 .cv-button {
     background-color: #b4ae41;
@@ -425,6 +433,7 @@ button:focus,
 
 .contact {
   color: #cccaa9;
+  text-align: center;
 }
 
 .contact-form {
@@ -457,7 +466,6 @@ button:focus,
 }
 
 .project-pic {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -473,14 +481,21 @@ button:focus,
   height: 48px;
 }
 
+.profile-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
 @supports (display: grid) {
   .project-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    /* padding-top: 200px; */
+    /* padding-bottom: 100px; */
   }
 
   .project-list__item {
@@ -724,7 +739,7 @@ button:focus,
     grid-row: auto / auto;
   }
 
-  h1 {
+  h2 {
     font-size: 20px;
   }
 
