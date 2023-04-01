@@ -106,6 +106,9 @@ a:focus {
 a:active {
   color: #979797;
 }
+.api-link{
+  color: #251f20;
+}
 
 button {
   background-color: #251f20;
@@ -415,7 +418,10 @@ button:focus,
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-
+.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .icon:hover,
 .icon:focus {
   -webkit-transform: scale(1.5);
