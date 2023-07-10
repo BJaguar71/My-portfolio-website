@@ -12,8 +12,10 @@
   <!--normalize Css added (always on top of css/styles.css)-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- awesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- script tags here -->
   <script src="js/script.js" async></script>
   <script src="js/tota11y.min.js" async></script>
@@ -27,233 +29,386 @@
         <li class="nav-item">
           <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-        </li> -->
-        <li class="nav-item">
+        <li class="nav-item drop">
           <a href="#works" role="menuitem" class="navigation-list__item">Works</a>
+          <div class="drop-menu">
+            <p class="drop-title">Case studies</p>
+            <a href="./myflix-angular-case-study.html" target="_blank" class="drop-menu__item">MyFlix Angular</a>
+            <a href="./chat-app-case-study.html" target="_blank" class="drop-menu__item">Chat App</a>
+            <a href="./myflix-react-case-study.html" target="_blank" class="drop-menu__item">MyFlix React</a>
+            <a href="./meet-app-case-study.html" class="drop-menu__item">Meet Me There!</a>
+            <a href="./t-flix-movie-api-case-study.html" target="_blank" class="drop-menu__item">T-Flix Movie API</a>
+            <a href="./pokedex-app-case-study.html" target="_blank" class="drop-menu__item">Pokédex App</a>
+          </div>
         </li>
         <li class="nav-item">
           <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
+    <!-- <img src="./img/1cat.png" alt="logo" id="logo"> -->
   </header>
   <main>
     <div class="profile">
+      <h1 id="greeting"><span>Welcome to my world!</span></h1>
       <!--add your image-->
-      <img src="img/mrymhnfi.jpg" class="profile__portrait" alt="maryam hanifi's photo">
-      <h1>Hello World!</h1>
-      <p>
-        My name is Maryam Hanifi. I am a <span>web</span> developer based in Berlin.
+      <img src="img/mrymhanifi.png" class="profile__portrait" alt="maryam hanifi's photo">
+      <p id="about-me">
+        I'm Maryam, an enthusiastic tech creator with a strong track record of developing various mobile and web apps
+        using popular technologies. Fueled by my deep concern for social issues and inequalities, my previous
+        experiences in journalism and social assistance have amplified my commitment to making a meaningful impact. Now,
+        I'm eager to leverage my technological expertise to drive positive societal change and actively contribute to
+        the success of your organization.</p>
+      <br><br><br>
+      <hr><br><br><br>
+      <h2 id="familiarity">Tools and Technologies Familiarity</h2>
+      <br><br>
+      <div class="tools-sec">
+        <!-- front end techs -->
+        <ul id="frontend"><b>Front-End</b>
+          <br><br>
+          <li>HTML</li>
+          <li>CSS/SCSS</li>
+          <li>Bootstrap</li>
+          <li>Responsive Design</li>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>TypeScript</li>
+          <li>Angular</li>
+          <li>Material</li>
+          <li>BDD/TDD/E2E</li>
+          <li>PWA</li>
+        </ul>
+        <!-- backend techs -->
+        <ul id="backend"><b>Back-End</b>
+          <br><br>
+          <li>Node.js</li>
+          <li>JSON</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+        </ul>
+        <!-- tools -->
+        <ul id="tools"><b>Tools</b>
+          <br><br>
+          <li>GitHub / Git</li>
+          <li>Postman</li>
+          <li>MongoDB/MongoShell</li>
+          <li>MySQL</li>
+          <li>Atatus</li>
+          <li>Google Cloud</li>
+          <li>Jest/Cucumber/Enzyme/Puppeteer</li>
+          <li>AWS</li>
+          <li>Chrome Dev Tools</li>
+          <li>Windows CLI</li>
+          <li>Linux & Mac CLI</li>
+          <li>SCRUM (Trello & Ora)</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustraitor</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+      <br><br>
+      <hr>
+      <br><br>
+      <h2 id="sec-title">Let's build an inclusive, diverse & accessible future for everyone! &#127752;</h2>
+      <br>
+      <p>I am excited about the opportunity to work in an environment that shares common values, where giving back to
+        society and striving for its betterment are central to our collective mission.
       </p>
-      <p class="about-text">The things that I enjoy a lot to do:</p>
-      <ul class="about-me">
-        <li class="about-me__item">Front-end development</li>
-        <li class="about-me__item">Back-end development</li>
-        <li class="about-me__item">Making new mobile Apps</li>
-        <li class="about-me__item">Writing articles</li>
-        <li class="about-me__item">painting and sculpture</li>
-        <li class="about-me__item">Petting cats 🐾 &#10084;</li>
+      <br><br>
+      <p><b>Feel free to reach out to me if you require my services. I am available for:</b></p>
+      <ul>
+        <li>Full/part-time contracts in Berlin</li>
+        <li>Freelance projects</li>
+        <li>Remote work across Germany</li>
+        <li>Collaborations</li>
       </ul>
+      <br><br>
+      <!-- contact -->
+      <h3 id="contact-info">Get in Touch</h3>
+      <br>
+      <div class="contact">
+        <a href="mailto:mrym.hanifi@gmail.com" id="gmail">mrym.hanifi[at]gmail.com &#x1F4E7; </a>
+        <br>
+        <a href="https://t.me/mrymhi">Telegram <span class="fa">&#xf2c6;</span></a>
+        <br><br>
+        <a href="https://www.linkedin.com/in/maryam-hanifi/" id="linkedin">Linkedin <span class="fa">&#xf08c;</span></a>
+      </div>
     </div>
-    <div class="profile-links">
-      <a href="files/Lebenslauf-und-Projektliste.pdf" class="cv-button" target="_blank" rel="noopener" download>View my
-        CV</a>
-      <!--add the link to your work-->
-      <a href="https://github.com/BJaguar71" class="profile-link">Check out my Github</a>
-    </div>
-    <hr>
-    <!-- projects here -->
-    <h1 id="works">My Projects</h1>
     <br>
+    <hr>
+    <br>
+    <div class="profile-links">
+      <a href="files/Maryam Hanifi - Resume - (de - en).pdf" class="cv-button" target="_blank" rel="noopener"
+        download><b>Download
+          my resume</b></a>
+      <!--add the link to your work-->
+      <a href="https://github.com/BJaguar71" class="profile-link"><b>Check out my Github</b></a>
+    </div>
+    <br>
+    <hr>
+    <br><br><br>
+    <!-- projects here -->
+    <h1 id="works"><span><b>
+          <<span>/
+      </span>Projects<span>></span></b></h1>
+
     <div class="project-list">
       <!-- Add your project here -->
       <div class="project-list__item">
-        <h2>Pokédex App</h2>
-        <p class="summary">I built this app with HTML, CSS and Javascript that loads data from an external API. When
-          each pokemon button is clicked, the image and the height of the Pokemon appears on a modal. This modal can
-          then be closed by clicking on the close (x) button, pressing the escape key or clicking outside the modal. The
-          app is resoponsive for different screen layouts.</p>
-        <p>Technologies:
-          <li>jQuery</li>
-          <li>Bootstrap</li>
-          <li>Pokémon <a href="https://pokeapi.co/" target="_blank" class="api-link">API</a></li>
-          <li>JSON web token</li>
+
+        <!-- Angular client side -->
+
+        <h4>MyFlix client-side app - Angular</h4>
+        <br>
+
+        <!-- project link here -->
+
+        <div id="project-link">
+          <a href="https://bjaguar71.github.io/myFlix-Angular-client/welcome" class="project-link" target="_blank"
+            rel="noopener"> Live Demo </a> /
+          <a href="https://github.com/BJaguar71/myFlix-Angular-client" class="project-link" target="_blank"
+            rel="noopener"> GitHub
+            Repo </a>
+          <br><br><br>
+        </div>
+
+        <!-- project pic -->
+
+        <a href="./img/myflix-ang.png" target="_blank"><img src="./img/myflix-ang.png" alt="MyFlix Angular in mobile, laptop and tablet screen layout"
+            class="project-pic myf1"></a>
+
+        <!-- Overview -->
+
+        <h5><b>Overview:</b></h5>
+        <p>MyFlix is a personal project I developed during my coding course at CareerFoundry. It is a client-side movie
+          app built with the Angular framework, similar to the one I previously created using the React library. The app
+          allows access to movie information, directors, genres, and movie posters only for authenticated users
+          registered in the database. Logged-in users have the ability to update their personal data and create/modify a
+          list of favorite movies within their user accounts.<a href="#" target="_blank" class="ang-case-study"><b>
+              &#128073 See more</b></a>
         </p>
-        <br>
-        <a href="https://bjaguar71.github.io/pokemon.js.app/index.html" class="project-link" target="_blank"
-          rel="noopener"><img src="./img/icons8-website-64 brown.png" alt="link to the live URL" width="46px"></a>
-        <a href="https://github.com/BJaguar71/pokemon.js.app" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
-        <br>
-        <br>
-        <br>
-        <img src="./img/pokemon.jpg" class="project-pic">
+
+        <!-- technologies -->
+
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>Angular / Angular Material / TypeScript / Movie <a href="https://movie-api.fly.dev/" target="_blank"
+              class="api-link">API</a>
+          </p>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br>
       </div>
       <div class="project-list__item">
-        <h2>Movie API - T-Flix</h2>
-        <p class="summary">This was my first experience creating an API. T-Flix is a movie app that includes only films
-          and series as well as documentaries in which trans people have either starred as actors/actresses or
-          directors. This API will be used in a client-side app, T-Flix Client. The app uses non-relational database,
-          [MongoDB] to fetch data from. The app is deployed on <b>fly.io</b>
+
+        <!-- Chat app -->
+        <h4>Chat App</h4>
+        <br>
+
+        <!-- project link here -->
+
+        <div id="project-link">
+          <a href="https://github.com/BJaguar71/Chat-App" class="project-link" target="_blank" rel="noopener"> GitHub
+            Repo </a>
+          <br><br><br>
+        </div>
+        <a href="./img/chat.png" target="_blank"><img src="./img/chat.png" alt="Chat app start & chat screen in iPhone"
+            class="project-pic chat1"></a>
+        <h5><b>Overview:</b></h5>
+        <p>Chat App is a native mobile app built with React Native library. Users can chat, send files such as pictures
+          as well as share their location with the other person they're chatting with. The app allows users to sign in
+          anonymously and consists of two screens:
+          <br>
         </p>
-        <p>Technologies:
-          <li>Express</li>
-          <li>Morgan</li>
-          <li>Lodash</li>
-          <li>JSON web token</li>
-        </p>
-        <br>
-        <a href="https://movie-api.fly.dev/documentation/" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/icons8-website-64 brown.png" alt="link to the live URL" width="46px"></a>
-        <a href="https://github.com/BJaguar71/movie_api" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
-        <br>
-        <br>
-        <br>
-        <img src="./img/movie-api.fly.dev.png" class="project-pic api">
-      </div>
-      <div class="project-list__item">
-        <h2>MyFlix-Client side - React</h2>
-        <p class="summary">MyFlix is a SPA movie application build with React that have multiple views and it allows
-          users to register, read informations about movies, directors, casts, genres as well as the movies' poster.
-          Registration gives the authorization to users which is required for them in order to be able to see the
-          informations on the app.</p>
-        <p>Technologies:
-          <li>React and React DOM</li>
-          <li>Axios</li>
-          <li>Bootstrap</li>
-          <li>Movie <a href="https://movie-api.fly.dev/documentation/" class="api-link">API</a></li>
-        </p>
-        <br>
-        <a href="https://myflix-client-side-react.netlify.app/" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/icons8-website-64 brown.png" alt="link to the live URL" width="46px"></a>
-        <a href="https://github.com/BJaguar71/myFlix-client" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <img src="./img/myflix-clinet-react-1.png" class="project-pic client-react">
-      </div>
-      <div class="project-list__item">
-        <h2>Meet App</h2>
-        <p class="summary">In this App users use their Google account for authentication to log-in and see the upcoming
-          events in each city. "Meet Me There" is a PWA app that works both online and offline. I created this app
-          following the BDD and DDT approach.The data will be fetched from Google Calendar API. Upcoming events will be
-          shown in chart format as well.</p>
-        <p>Technologies:
-          <li>React and React DOM</li>
-          <li>Axios</li>
-          <li>AWS Lambda</li>
-          <li>Recharts</li>
-          <li>Jest/Cucumber/Puppeteer for testing</li>
-          <li>Google Calendar API</li>
-        </p>
-        <br>
-        <a href="https://meet-me-there.netlify.app/" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/icons8-website-64 brown.png" alt="link to the live URL" width="46px"></a>
-        <a href="https://github.com/BJaguar71/MeetApp" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
-        <br>
-        <br>
-        <img width="100%" height="200" src="./img/ezgif.com-video-to-gif.gif">
-      </div>
-      <div class="project-list__item">
-        <h2>Chat App</h2>
-        <p>is native mobile app build with React Native, Expo as well as the Google Firestore Database with the
-          features:</p>
-        <ul>
-          <li><b>Start screen:</b> where the users can write their name and choose a background color for the chat
-            screen.
+        <ul class="chat">
+          <li><b>Start Screen:</b> Users can enter their names and choose a background color for the chat screen.</li>
+          <li><b>Chat Screen:</b> Users can engage in real-time chat using the chosen name from the start screen, which
+            is displayed at the top of the chat screen. <a href="#" target="_blank" class="chat-case-study"><b>
+                &#128073 See more</b></a></p>
           </li>
-          <li><b>redirecting through screens:</b>the users will be able to chat screen from the start screen and
-            opposit.
-          </li>
-          <li><b>Chat screen: </b>where the user can chat with the chosen name from the start screen at the top of the
-            chat screen.</li>
         </ul>
-        <p>Technologies:
-          <li>React Native</li>
-          <li>Expo</li>
-          <li>GiftedChat</li>
-          <li>Google Firestore Database</li>
-        </p>
         <br>
-        <a href="https://github.com/BJaguar71/Chat-App" class="project-link" target="_blank" rel="noopener"><img
-            src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
-        <br>
-        <br>
-        <br>
-        <img src="./img/chat app screens.png" alt="start screen of chat app" class="project-pic">
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>React Native / Expo / GiftedChat library / Google Firestore Database
+          </p>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br>
       </div>
+
+      <!-- My Flix React  -->
+
       <div class="project-list__item">
-        <h2>MyFlix app client-side - Angular</h2>
-        <p class="summary">I this project I experienced Angular and its great features, tools and materials to build
-          another client-side app for my movie API.The app's user flow is the same as the React version of the app.
-          unlike the React version of the app, this version has a welcome page and a different user experience. It is
-          also documentated using TypeDoc.
-        <p>Technologies:
-          <li>Angular</li>
-          <li>Angular Material</li>
-          <li>TypeScript</li>
-          <li>Movie <a href="https://movie-api.fly.dev/documentation/" class="api-link">API</a></li>
+        <h4>MyFlix client-side app - React</h4>
+        <br>
+        <!-- project link here -->
+
+        <div id="project-link">
+          <a href="https://myflix-client-side-react.netlify.app/"
+            rel="noopener" class="project-link" target="_blank"> Live Demo </a> /
+          <a href="https://github.com/BJaguar71/myFlix-client" class="project-link" target="_blank"
+            rel="noopener"> GitHub
+            Repo </a>
+          <br><br><br>
+        </div>
+
+        <!-- project pic here -->
+
+        <a href="./img/myflix-react.png" target="_blank"><img src="./img/myflix-react.png" alt="myflix React in mobile, laptop and tablet screen layout" class="project-pic">
+        </a>
+
+        <!-- Overview -->
+
+        <h5><b>Overview</b></h5>
+        <p class="summary">MyFlix is a single-page movie application (SPA) using the MERN stack, that enables users to register, access information about movies, directors, genres, and movie posters. Logged-in users can update their personal data and create/modify a list of favorite movies in their accounts. To gain access to the movies and their details, users must complete an authorization process. <a href="#" target="_blank" class="react-case-study"><b>
+          &#128073 See more</b></a>
         </p>
+
+        <!-- technologies  -->
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>React / Axios / Bootstrap / Movie <a href="https://movie-api.fly.dev/" target="_blank"
+            class="api-link">API</a></p>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br>
+      </div>
+
+      <!-- Meet app -->
+
+      <div class="project-list__item">
+        <h4>Meet Me There! - React Progressive Web App</h4>
         <br>
-        <a href="https://bjaguar71.github.io/myFlix-Angular-client/welcome" class="project-link" target="_blank"
-          rel="noopener"><img src="./img/icons8-website-64 brown.png" alt="link to the live URL" width="46px"></a>
-        <a href="https://github.com/BJaguar71/myFlix-Angular-client" class="project-link" target="_blank"
-          rel="noopener"><img src="./img/github icon 48x48 dark brown.png" alt="link to the github repository"></a>
+
+        <!-- project link here -->
+
+        <div id="project-link">
+          <a href="https://meet-me-there.netlify.app/" class="project-link" target="_blank" rel="noopener"> Live Demo </a> / 
+          <a href="https://github.com/BJaguar71/MeetApp" class="project-link" target="_blank" rel="noopener"> GitHub Repo </a>
+          <br><br><br>
+        </div>
+
+        <!-- project pic -->
+
+        <a href="./img/meet.png" target="_blank">
+          <img src="./img/meet.png" alt="Meet Me There in mobile, laptop and tablet screen layout" class="project-pic">
+        </a>
+
+        <!-- overview -->
+
+        <h5><b>Overview</b></h5>
+
+
+        <p class="summary">Meet Me There is a PWA that I developed with the intention of helping users find upcoming events using the Google Calendar API. By integrating the Google Calendar API, users can register with their Google accounts to access and view upcoming events in various cities and countries. <a href="./meet-app-case-study.html" target="_blank" class="react-case-study"><b>
+          &#128073 See more</b></a>
+        </p>
+
+        <!-- technologies -->
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>React / Axios / AWS Lambda / Recharts / BDD, TDD, E2E (Jest, Cucumber, Enzyme, Puppeteer) / Google Calendar API</p>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br>
+      </div>
+
+      <!-- TFlix movie API -->
+
+      <div class="project-list__item">
+        <h4>T-Flix Movie API</h4>
         <br>
+
+        <!-- project links here -->
+        
+        <div id="project-link">
+          <a href="https://movie-api.fly.dev/documentation"
+            rel="noopener" class="project-link" target="_blank"> Live Demo </a> /
+          <a href="https://github.com/BJaguar71/movie_api" class="project-link" target="_blank"
+            rel="noopener"> GitHub
+            Repo </a>
+          <br><br><br>
+        </div>
+
+        <!-- project pic here -->
+
+        <a href="./img/tflix-movie-api.png" target="_blank"><img src="./img/tflix-movie-api.png" alt="T-Flix movie API in laptop screen layout" class="project-pic">
+        </a>
+
+        <!-- Overview -->
+
+        <h5><b>Overview</b></h5>
+        <p class="summary">MyFlix is a single-page movie application (SPA) using the MERN stack, that enables users to register, access information about movies, directors, genres, and movie posters. Logged-in users can update their personal data and create/modify a list of favorite movies in their accounts. To gain access to the movies and their details, users must complete an authorization process. <a href="#" target="_blank" class="react-case-study"><b>
+          &#128073 See more</b></a>
+        </p>
+
+        <!-- technologies  -->
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>Node.js / Express / Morgan / Lodash / JSON web token / CLI </p>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br>
+      </div>
+
+      <!-- Pokédex App -->
+
+      <div class="project-list__item">
+        <h4>Pokédex App</h4>
         <br>
-        <br>
-        <br>
-        <img src="./img/Angular-myflix.gif" class="project-pic client-react">
+
+        <!-- project link here -->
+        
+        <div id="project-link">
+          <a href="https://bjaguar71.github.io/pokemon.js.app/index.html" rel="noopener" class="project-link" target="_blank"> Live Demo
+          </a> /
+          <a href="hhttps://github.com/BJaguar71/pokemon.js.app" class="project-link" target="_blank" rel="noopener"> GitHub
+            Repo </a>
+          <br><br><br>
+        </div>
+
+        <!-- project pic here -->
+
+        <a href="./img/pokemon.png" target="_blank"><img src="./img/pokemon.png" alt="Pokédex app in mobile and laptop screen" class="project-pic"></a>
+
+        <!-- Overview -->
+
+        <h5><b>Overview</b></h5>
+        <p class="summary">
+          Pokédex is a straightforward app built with essential technologies such as HTML, CSS, JavaScript, as well as jQuery. The app is responsive and adjusts to different screen layouts. I created this app using an external API. <a href="#" target="_blank" class="pokedex-case-study"><b>
+            &#128073 See more</b></a>
+        </p>
+
+        <!-- technologies -->
+        <div id="technologies">
+          <h6><b>Technologies</b></h6>
+          <p>jQuery / CSS Bootstrap / Pokémon <a href="https://pokeapi.co/" target="_blank"><i>API</i></a> / JSON web token</p>
+        </div>
       </div>
     </div>
     <br><br>
-    <hr>
-    <br><br>
-    <!-- contact form -->
-    <!-- <div>
-      <form action="#" method="post" class="contact-form" id="contact-form">
-        <label class="standard-label" for="email">
-          Email
-        </label>
-        <input type="email" id="email" name="user_email" placeholder="sample@mail.com" required>
-        <label class="standard-label" for="telephon">
-          Telephon
-        </label>
-        <input required type="tel" id="telephon" placeholder="+12345678900">
-        <label class="standard-label" for="message">
-          Message
-        </label>
-        <textarea required maxlength="240" id="message" placeholder="Max 240"></textarea>
-        <br>
-        <button class="button" type="submit" value="send message">Send the Message</button>
-      </form>
-      <br>
-        <p class="contact">Or contact me directly through
-          <a class="profile-link" href="mailto:mrym.hanifi@gmail.com">Email</a>
-        </p>
-    </div> -->
   </main>
   <br>
   <br>
   <br>
   <footer id="contact" class="page-footer">
-    <p>Wanna get in touch?</p>
-    <div>
-      <a href="https://github.com/BJaguar71" target="_blank" rel="noopener">
-        <img src="img/github.svg" alt="Github logo" class="icon grow">
-      </a>
-      <a href="https://www.linkedin.com/in/maryam-hanifi/" target="_blank" rel="noopener">
-        <img src="img/linkdin.svg" alt="Linkdin logo" class="icon grow">
-      </a>
-      <a class="icon grow" href="mailto:mrym.hanifi@gmail.com">
-        <img src="img/gmail.svg" alt="Gmail logo" class="icon grow">
-      </a>
+    <!-- contact -->
+    <h3 id="contact-info">Get in Touch</h3>
+    <br>
+    <div class="contact">
+      <a href="mailto:mrym.hanifi@gmail.com" id="gmail">mrym.hanifi[at]gmail.com &#x1F4E7; </a>
+      <br>
+      <a href="https://t.me/mrymhi">Telegram <span class="fa">&#xf2c6;</span></a>
+      <br><br>
+      <a href="https://www.linkedin.com/in/maryam-hanifi/" id="linkedin">Linkedin <span class="fa">&#xf08c;</span></a>
     </div>
   </footer>
   <!-- Bootstrap's script tags -->
